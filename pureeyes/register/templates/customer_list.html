@@ -1,0 +1,16 @@
+<!-- customer_list.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer List</title>
+</head>
+<body>
+    <h1>Customer List</h1>
+    <ul>
+    {% for customer in customers %}
+        <li>{{ customer.owner_name }} - {{ customer.animal_name }}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
